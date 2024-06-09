@@ -2,7 +2,8 @@
 
 This project involves creating a movie recommendation system using collaborative filtering techniques. The system utilizes the MovieLens dataset to recommend movies to users based on their previous ratings.
 
-Collaborative filtering is a technique used in recommendation systems to predict the preferences or ratings of a user for a particular item based on the preferences or ratings of many other users. The fundamental idea behind collaborative filtering is that users who agreed in the past will agree in the future
+Collaborative filtering is a technique used in recommendation systems to predict the preferences or ratings of a user for a particular item based on the preferences or ratings of many other users. The fundamental idea behind collaborative filtering is that users who agreed in the past will agree in the future.
+
 ## Requirements
 
 The following packages are required to run this project:
@@ -22,7 +23,7 @@ pip install pandas numpy scikit-learn
 
 Download the MovieLens dataset from Kaggle using the following link and place it in the `CollaborativeFiltering/Datasets` folder under your project directory: [Download MovieLens Dataset](https://www.kaggle.com/datasets/grouplens/movielens-20m-dataset)
 
-## Training the Recommendation Model
+## Training and Testing the Recommendation Model
 
 The `movie_recommendation_app.py` script is used to train the movie recommendation model. It reads the MovieLens dataset, preprocesses the data, builds a collaborative filtering model, trains the model on the training data, and saves the trained model.
 
@@ -33,38 +34,28 @@ The `movie_recommendation_app.py` script is used to train the movie recommendati
 3. **Train the Model:** Fit the model using the training data.
 4. **Save the Trained Model:** Save the model for later use.
 
-### Running the Training Script:
+### Running the Script:
 
 To train the model, execute the following command:
 
 ```bash
 cd CollaborativeFiltering
-python movie_recommendation_app.py
+streamlit run ..path/movie_recommendation_app.py
 ```
 
 The training process time may vary depending on your hardware.
 
-## Testing the Recommendation Model
+## UI Screenshots
 
-The `movie_recommendation_app.ipynb` notebook is used to test the trained model. It loads the dataset, preprocesses the data, and uses the trained model to make movie recommendations.
+Below are some screenshots of the user interface to test the model:
 
-### Testing Steps:
+![Screenshot 2024-06-09 181110](https://github.com/ManasiPandit48/Movie-Recommendation-systems/assets/125982196/534fe616-dc79-4cf7-b909-8ce000cbcd65)
 
-1. **Load the Dataset:** Load and preprocess the MovieLens dataset.
-2. **Load the Trained Model:** Load the trained model from the saved files.
-3. **Make Recommendations:** Use the model to recommend movies based on user input.
+![Screenshot 2024-06-09 181221](https://github.com/ManasiPandit48/Movie-Recommendation-systems/assets/125982196/7437f8eb-85f1-4d53-b662-6120521d3c2e)
 
-### Running the Testing Notebook:
+![Screenshot 2024-06-09 181144](https://github.com/ManasiPandit48/Movie-Recommendation-systems/assets/125982196/a07f45c0-d794-4899-9d5e-a57f46ff7339)
 
-To test the movie recommendation system interactively, execute the following command:
-
-```bash
-cd CollaborativeFiltering
-jupyter notebook movie_recommendation_app.ipynb
-```
-
-Follow the steps in the notebook to see movie recommendations based on the collaborative filtering model.
-
+----
 ## Notes
 
 - Ensure the MovieLens dataset is placed correctly in the `CollaborativeFiltering/Datasets` directory.
@@ -82,4 +73,3 @@ Feel free to reach out if you have any questions or encounter any issues.
 Happy coding!
 
 ---
-
