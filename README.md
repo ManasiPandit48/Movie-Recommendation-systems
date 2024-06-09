@@ -12,12 +12,12 @@ Each method is implemented in its respective subfolder, with detailed documentat
 ## Installation
 To install the necessary packages, run:
 ```sh
-pip install -r requirements.txt
+pip install <requirements>
 ```
 
 ## Usage
 To run a specific model, navigate to its subfolder and execute the corresponding script. For example:
 ```sh
 cd collaborative_filtering
-python main.py
+python <main>.py
 ```
